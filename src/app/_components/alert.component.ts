@@ -10,8 +10,8 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./alert.component.css']
 })
 export class AlertComponent implements OnInit, OnDestroy{
-  @Input() id = 'defaul-alert';
-  @Input() fade = 'true';
+  @Input() id = 'default-alert';
+  @Input() fade = true;
 
   alerts: Alert[] = [];
   alertsSubscriptions: Subscription; 
