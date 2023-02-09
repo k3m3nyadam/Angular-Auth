@@ -31,11 +31,11 @@
 
             <div class="mb-3">
                 <label class="form-label">Password</label>
-                <input type="text" formControlName = "password" class="form-control"
+                <input type="password" formControlName = "password" class="form-control"
                         [ngClass]="{'is-invalid': submitted && f.password.errors}">
                 <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
                     <div *ngIf="f.password.errors.required">Password is required</div>
-                    <div *ngIf="f.password.errors.minLength">Password must be at least 6 characters</div>
+                    <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
                 </div>
             </div>
 
